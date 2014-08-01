@@ -1,0 +1,17 @@
+---
+
+default:
+  bookname : Designing Cisco Network Service Architectures
+  searchkey: Cisco
+book1:
+  bookname : Designing Cisco Network Service Architectures - Student Guide
+  searchkey: Cisco
+book2:
+  bookname : Designning For Cisco Internetwork SolutionsTroubleshooting
+  searchkey: Cisco
+book3:
+  bookname : Troubleshooting And Maintaining Cisco IP Networks
+  searchkey: Network
+
+
+  
