@@ -1,7 +1,8 @@
 #!/bin/sh
 alias w="which >/dev/null"
 
-w calabash-android || die "calabash-android is not installed. Try to install gem install calabash-android"
+w bundler || die "bundler is not installed. Try to install gem install bundler"
+bundle install
 
 calabash-android resign dkitAndroid-1.3.apk
 
