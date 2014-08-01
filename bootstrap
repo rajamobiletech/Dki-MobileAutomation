@@ -1,7 +1,11 @@
-#!/bin/sh
+#!/bin/sh -e
 alias w="which >/dev/null"
 
-w bundler || die "bundler is not installed. Try to install gem install bundler"
+apt-get install libgemplugin-ruby
+
+gem install bundler
+
+w bundler || die "bundler is not installed. Try to install 'gem install bundler'"
 bundle install
 
 calabash-android resign dkitAndroid-1.3.apk
