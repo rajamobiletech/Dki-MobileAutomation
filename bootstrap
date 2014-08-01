@@ -1,7 +1,7 @@
 #!/bin/sh -e
 alias w="which >/dev/null"
 
-gem install bundler
+sudo gem install bundler
 
 w bundler || die "bundler is not installed. Try to install 'gem install bundler'"
 bundle install
@@ -9,8 +9,5 @@ bundle install
 calabash-android resign dkitAndroid-1.3.apk
 
 adb devices || die "No devices found."
-
-/Applications/Genymotion.app/Contents/MacOS/player --vm-name "Google Nexus 7 2013 - 4.4.2 - API 19 - 1200x1920"
-
 
 
