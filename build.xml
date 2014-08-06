@@ -89,4 +89,12 @@
     <!-- version-tag: 1 -->
     <import file="${sdk.dir}/tools/ant/build.xml" />
 
+        <property name="PathAndroidApp" location="/Users/Shared/Jenkins/Home/jobs/Dkit-MobileAutomation/workspace/dkitAndroid-1.3.apk" />
+    <target name="Debug">
+        <exec dir="./" executable="sh">
+            <arg line="calabash-android run ${PathAndroidApp} -p android /Users/Shared/Jenkins/Home/jobs/Dkit-MobileAutomation/workspace/features/Dkit_login.feature --format json -o cucumber.json" />
+        </exec>
+    </target>
+
+
 </project>
