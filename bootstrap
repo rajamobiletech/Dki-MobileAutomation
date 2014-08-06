@@ -1,8 +1,6 @@
 #!/bin/sh -e
 alias w="which >/dev/null"
 
-sudo gem install bundler
-
 w bundler || die "bundler is not installed. Try to install 'gem install bundler'"
 bundle install
 
