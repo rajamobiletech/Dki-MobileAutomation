@@ -6,6 +6,5 @@ bundle install
 
 calabash-android resign dkitcordova.apk
 
-adb devices || die "No devices found."
 
 
