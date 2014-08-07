@@ -1,2 +1,2 @@
 #!/bin/sh
-calabash-android run dkitcordova.apk --format json -o cucumber.json
+calabash-android run dkitcordova.apk features/Dkit-login.feature --format json -o cucumber.json
