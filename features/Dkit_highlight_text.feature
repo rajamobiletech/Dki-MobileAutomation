@@ -4,7 +4,7 @@ Feature: Highlighted text scenarios in the selected book
 Background:
   Given student logged in to dkit reader application
   And student open the book
-  Then I wait for 5 seconds
+  #Then I wait for 5 seconds
   
 @Add_highlight_text
 Scenario: Highlight Text

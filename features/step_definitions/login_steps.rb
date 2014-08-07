@@ -42,20 +42,20 @@ end
 When /^user on login page$/ do
 # @calabash.element_exists("CordovaWebView css:'#loginBtn'")
   sleep(30)
-   Choose_Lang = query("CordovaWebView css:'#chooseLangLabel'",'textContent')
-   Select_Lang = query("CordovaWebView css:'#selectLang'",'textContent')
-   User_Ltext = query("CordovaWebView css:'#userNameLabel'","textContent")
-   Uedit_text = query("CordovaWebView css:'#user_name'",'value')
-   Pwd_Ltext = query("CordovaWebView css:'#passwordLabel'","textContent")
-   Pedit_text = query("CordovaWebView css:'#password'",'value')
-   Button_text = query("CordovaWebView css:'#loginBtn'","textContent")
-   FChoose_Lang = "Then I see"+" "+ Choose_Lang.first+Select_Lang.first+"\n"
-    puts FChoose_Lang
-   Fuser_name = "Then I see"+" "+User_Ltext.first+":"+Uedit_text.first+"\n"
-    puts Fuser_name
-   Fuser_pwd = "Then I see"+" "+Pwd_Ltext.first+":"+Pedit_text.first+"\n"
-     puts Fuser_pwd
-   Fuser_Login = "Then I see"+" "+ Button_text.first+" "+"button"+"\n"
-     puts Fuser_Login
+  # Choose_Lang = query("CordovaWebView css:'#chooseLangLabel'",'textContent')
+  # Select_Lang = query("CordovaWebView css:'#selectLang'",'textContent')
+  # User_Ltext = query("CordovaWebView css:'#userNameLabel'","textContent")
+   #Uedit_text = query("CordovaWebView css:'#user_name'",'value')
+   #Pwd_Ltext = query("CordovaWebView css:'#passwordLabel'","textContent")
+   #Pedit_text = query("CordovaWebView css:'#password'",'value')
+   #Button_text = query("CordovaWebView css:'#loginBtn'","textContent")
+  # FChoose_Lang = "Then I see"+" "+ Choose_Lang.first+Select_Lang.first+"\n"
+   # puts FChoose_Lang
+   #Fuser_name = "Then I see"+" "+User_Ltext.first+":"+Uedit_text.first+"\n"
+    #puts Fuser_name
+   #Fuser_pwd = "Then I see"+" "+Pwd_Ltext.first+":"+Pedit_text.first+"\n"
+    # puts Fuser_pwd
+   #Fuser_Login = "Then I see"+" "+ Button_text.first+" "+"button"+"\n"
+    # puts Fuser_Login
  
  end
