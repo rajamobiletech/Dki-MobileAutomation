@@ -4,7 +4,7 @@ alias w="which >/dev/null"
 w bundler || die "bundler is not installed. Try to install 'gem install bundler'"
 bundle install
 
-calabash-android resign dkitAndroid-1.3.apk
+calabash-android resign dkitcordova.apk
 
 adb devices || die "No devices found."
 
