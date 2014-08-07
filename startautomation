@@ -1,2 +1,2 @@
 #!/bin/sh
-calabash-android run dkitAndroid-1.3.apk features/Dkit_login.feature
+calabash-android run dkitcordova.apk features/Dkit_login.feature
